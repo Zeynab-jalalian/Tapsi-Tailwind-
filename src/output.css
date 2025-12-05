@@ -259,6 +259,9 @@
   .w-full {
     width: 100%;
   }
+  .max-w-\[480px\] {
+    max-width: 480px;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
@@ -291,6 +294,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-start {
+    justify-content: flex-start;
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
@@ -435,6 +441,9 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .text-\[\#333\] {
+    color: #333;
   }
   .text-black {
     color: var(--color-black);
