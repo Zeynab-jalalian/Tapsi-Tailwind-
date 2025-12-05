@@ -4,8 +4,8 @@
 @theme {
   --breakpoint-*: initial;
   --breakpoint-sm: 640px;
-  --breakpoint-md: 840px;
-  --breakpoint-lg: 1024px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 991px;
   --breakpoint-xl: 1280px;
   --breakpoint-2xl: 1536px;
 

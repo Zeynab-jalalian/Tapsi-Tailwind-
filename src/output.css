@@ -7,11 +7,9 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-semibold: 600;
-    --font-weight-bold: 700;
     --radius-3xl: 1.5rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    --font-iran_Bold: iran_Bold;
     --color-main-tapsi: rgb(255, 91, 53);
     --color-gray1: #545454;
   }
@@ -186,6 +184,9 @@
   .flex {
     display: flex;
   }
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
   }
@@ -236,11 +237,11 @@
     --tw-gradient-position: 91deg,#ff5722 50%,#e54917;
     background-image: linear-gradient(var(--tw-gradient-stops,91deg,#ff5722 50%,#e54917));
   }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
-  }
-  .font-iran_Bold {
-    font-family: var(--font-iran_Bold);
   }
   .text-\[15px\] {
     font-size: 15px;
@@ -248,10 +249,6 @@
   .leading-10 {
     --tw-leading: calc(var(--spacing) * 10);
     line-height: calc(var(--spacing) * 10);
-  }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -305,6 +302,21 @@
       @media (hover: hover) {
         color: var(--color-main-tapsi);
       }
+    }
+  }
+  .md\:flex {
+    @media (width >= 768px) {
+      display: flex;
+    }
+  }
+  .md\:p-5 {
+    @media (width >= 768px) {
+      padding: calc(var(--spacing) * 5);
+    }
+  }
+  .lg\:flex {
+    @media (width >= 991px) {
+      display: flex;
     }
   }
 }
