@@ -206,6 +206,9 @@
   .block {
     display: block;
   }
+  .contents {
+    display: contents;
+  }
   .flex {
     display: flex;
   }
@@ -217,6 +220,9 @@
   }
   .h-\[68px\] {
     height: 68px;
+  }
+  .h-full {
+    height: 100%;
   }
   .min-h-\[50px\] {
     min-height: 50px;
@@ -430,13 +436,6 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-main-tapsi);
-      }
-    }
-  }
-  .hover\:opacity-100 {
-    &:hover {
-      @media (hover: hover) {
-        opacity: 100%;
       }
     }
   }

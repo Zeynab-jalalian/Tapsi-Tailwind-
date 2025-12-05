@@ -19,18 +19,27 @@ menu_icon.addEventListener("click", () => {
 //filter
 const filter_ul = document.getElementById("filter_ul");
 const items = filter_ul.querySelectorAll("li");
+const contents = document.querySelectorAll(".service-content");
 
 items.forEach((item) => {
   item.addEventListener("click", () => {
-
-
+    const target = item.dataset.service;
     items.forEach((li) => {
       li.querySelector("img").classList.add("opacity-[0.6]");
       li.querySelector("p").classList.add("opacity-[0.6]");
     });
 
-
     item.querySelector("img").classList.remove("opacity-[0.6]");
     item.querySelector("p").classList.remove("opacity-[0.6]");
+
+    contents.forEach((content) => {
+      const contentKey = content.getAttribute("data-service");
+
+      if (contentKey === target) {
+        content.style.display = "flex";
+      } else {
+        content.style.display = "none";
+      }
+    });
   });
 });
