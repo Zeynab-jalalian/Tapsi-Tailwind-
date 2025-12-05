@@ -172,6 +172,12 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
+  .top-\[68px\] {
+    top: 68px;
+  }
+  .top-\[70px\] {
+    top: 70px;
+  }
   .z-10 {
     z-index: 10;
   }
@@ -220,6 +226,9 @@
   .items-center {
     align-items: center;
   }
+  .items-start {
+    align-items: flex-start;
+  }
   .justify-around {
     justify-content: space-around;
   }
@@ -228,6 +237,12 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
+  .gap-7 {
+    gap: calc(var(--spacing) * 7);
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
@@ -239,11 +254,24 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-\[rgba\(0\,0\,0\,0\.3\)\] {
+    border-color: rgba(0,0,0,0.3);
+  }
+  .border-\[rgba\(0\,0\,0\,0\.5\)\] {
+    border-color: rgba(0,0,0,0.5);
+  }
   .bg-\[\#f8f8f8\] {
     background-color: #f8f8f8;
   }
   .bg-transparent {
     background-color: transparent;
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .bg-linear-\[91deg\,\#ff5722_50\%\,\#e54917\] {
     --tw-gradient-position: 91deg,#ff5722 50%,#e54917;
@@ -258,6 +286,9 @@
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
@@ -266,6 +297,9 @@
   }
   .px-15 {
     padding-inline: calc(var(--spacing) * 15);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
