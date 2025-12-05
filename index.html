@@ -13,105 +13,115 @@
   </head>
   <body>
     <!--header start-->
-    <header
-      class="w-full md:flex hidden justify-around items-center p-5 bg-[#f8f8f8] font-semibold"
-    >
-      <div>
-        <a href="#">
-          <svg
-            class="group"
-            xmlns="http://www.w3.org/2000/svg"
-            width="102"
-            height="22"
-            viewBox="0 0 102 22"
+    <div class="md:flex hidden justify-center items-center flex-col">
+      <header
+        class="w-full md:flex hidden justify-around items-center p-5 bg-[#f8f8f8] font-semibold"
+      >
+        <div>
+          <a href="#">
+            <svg
+              class="group"
+              xmlns="http://www.w3.org/2000/svg"
+              width="102"
+              height="22"
+              viewBox="0 0 102 22"
+            >
+              <g fill-rule="evenodd">
+                <path
+                  class="group-hover:fill-[#FF5B35]"
+                  fill="#000"
+                  d="M102 5.946h-3.222v4.28H91.8v-4.28h-3.221v4.28h-5.637a1.878 1.878 0 0 1-1.879-1.872V5.946h-3.221v2.408a1.878 1.878 0 0 1-1.879 1.873 1.878 1.878 0 0 1-1.879-1.873V5.946h-3.221v2.408a1.878 1.878 0 0 1-1.879 1.873h-1.879V5.946h-3.22v4.28h-17.18v3.212h3.758v.535c0 2.656-2.167 4.816-4.831 4.816-2.664 0-4.832-2.16-4.832-4.816v-3.746H37.58v3.746c0 4.426 3.613 8.027 8.053 8.027 4.44 0 8.052-3.6 8.052-8.027v-.535H68.985a5.09 5.09 0 0 0 3.489-1.381 5.09 5.09 0 0 0 3.49 1.38 5.09 5.09 0 0 0 3.489-1.38 5.089 5.089 0 0 0 3.489 1.38H102V5.947z"
+                ></path>
+                <path
+                  class="group-hover:fill-[#FF5B35]"
+                  fill="#000"
+                  d="M84.702 19.297h3.854V22h3.304v-5.946h-7.158zM102 0h-6.561v2.973H102z"
+                ></path>
+                <path
+                  class="group-hover:fill-black"
+                  fill="#FF5B35"
+                  d="M26.842 11.297H10.737V5.946h16.105zM26.842 22H0v-5.351h26.842z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div>
+          <ul
+            class="flex justify-center items-center gap-10 text-[15px] text-gray1"
           >
-            <g fill-rule="evenodd">
-              <path
-                class="group-hover:fill-[#FF5B35]"
-                fill="#000"
-                d="M102 5.946h-3.222v4.28H91.8v-4.28h-3.221v4.28h-5.637a1.878 1.878 0 0 1-1.879-1.872V5.946h-3.221v2.408a1.878 1.878 0 0 1-1.879 1.873 1.878 1.878 0 0 1-1.879-1.873V5.946h-3.221v2.408a1.878 1.878 0 0 1-1.879 1.873h-1.879V5.946h-3.22v4.28h-17.18v3.212h3.758v.535c0 2.656-2.167 4.816-4.831 4.816-2.664 0-4.832-2.16-4.832-4.816v-3.746H37.58v3.746c0 4.426 3.613 8.027 8.053 8.027 4.44 0 8.052-3.6 8.052-8.027v-.535H68.985a5.09 5.09 0 0 0 3.489-1.381 5.09 5.09 0 0 0 3.49 1.38 5.09 5.09 0 0 0 3.489-1.38 5.089 5.089 0 0 0 3.489 1.38H102V5.947z"
-              ></path>
-              <path
-                class="group-hover:fill-[#FF5B35]"
-                fill="#000"
-                d="M84.702 19.297h3.854V22h3.304v-5.946h-7.158zM102 0h-6.561v2.973H102z"
-              ></path>
-              <path
-                class="group-hover:fill-black"
-                fill="#FF5B35"
-                d="M26.842 11.297H10.737V5.946h16.105zM26.842 22H0v-5.351h26.842z"
-              ></path>
-            </g>
-          </svg>
-        </a>
-      </div>
-      <div>
-        <ul
-          class="flex justify-center items-center gap-10 text-[15px] text-gray1"
-        >
-          <li class="hover:text-main-tapsi">
-            <a href="#">ثبت‌نام راننده خودرو</a>
-          </li>
-          <li class="hover:text-main-tapsi">
-            <a href="#">ثبت‌نام راننده موتور</a>
-          </li>
-          <li class="hover:text-main-tapsi"><a href="#">وبلاگ</a></li>
-          <li class="hover:text-main-tapsi"><a href="#">پشتیبانی</a></li>
-          <li class="hover:text-main-tapsi">
-            <a href="#">اپلیکیشن رانندگان</a>
-          </li>
-          <li class="group relative mr-2 lg:flex hidden">
-            <a href="#" class="relative block">
-              <span
-                class="absolute inset-0 rounded-3xl bg-transparent group-hover:bg-[rgba(0,0,0,0.2)] transition-colors duration-300 z-10"
-              ></span>
-              <div
-                class="relative text-white bg-linear-[91deg,#ff5722_50%,#e54917] cursor-pointer leading-10 rounded-3xl font-semibold h-10 w-[130px] flex justify-center items-center"
-              >
-                دانلود تپسی
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
+            <li class="hover:text-main-tapsi">
+              <a href="#">ثبت‌نام راننده خودرو</a>
+            </li>
+            <li class="hover:text-main-tapsi">
+              <a href="#">ثبت‌نام راننده موتور</a>
+            </li>
+            <li class="hover:text-main-tapsi"><a href="#">وبلاگ</a></li>
+            <li class="hover:text-main-tapsi"><a href="#">پشتیبانی</a></li>
+            <li class="hover:text-main-tapsi">
+              <a href="#">اپلیکیشن رانندگان</a>
+            </li>
+            <li class="group relative mr-2 lg:flex hidden">
+              <a href="#" class="relative block">
+                <span
+                  class="absolute inset-0 rounded-3xl bg-transparent group-hover:bg-[rgba(0,0,0,0.2)] transition-colors duration-300 z-10"
+                ></span>
+                <div
+                  class="relative text-white bg-linear-[91deg,#ff5722_50%,#e54917] cursor-pointer leading-10 rounded-3xl font-semibold h-10 w-[130px] flex justify-center items-center"
+                >
+                  دانلود تپسی
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <a href="#">
+        <img src="img/header-banner-desktop.gif" alt="GIF" class="object-cover min-h-[75px]" />
+      </a>
+    </div>
     <!--header responsive-->
-    <header
-      class="w-full flex md:hidden justify-between items-center py-3 px-15 bg-[#f8f8f8] font-semibold"
-    >
-      <div>
-        <a href="#">
-          <svg
-            class="group"
-            xmlns="http://www.w3.org/2000/svg"
-            width="102"
-            height="22"
-            viewBox="0 0 102 22"
-          >
-            <g fill-rule="evenodd">
-              <path
-                class="group-hover:fill-[#FF5B35]"
-                fill="#000"
-                d="M102 5.946h-3.222v4.28H91.8v-4.28h-3.221v4.28h-5.637a1.878 1.878 0 0 1-1.879-1.872V5.946h-3.221v2.408a1.878 1.878 0 0 1-1.879 1.873 1.878 1.878 0 0 1-1.879-1.873V5.946h-3.221v2.408a1.878 1.878 0 0 1-1.879 1.873h-1.879V5.946h-3.22v4.28h-17.18v3.212h3.758v.535c0 2.656-2.167 4.816-4.831 4.816-2.664 0-4.832-2.16-4.832-4.816v-3.746H37.58v3.746c0 4.426 3.613 8.027 8.053 8.027 4.44 0 8.052-3.6 8.052-8.027v-.535H68.985a5.09 5.09 0 0 0 3.489-1.381 5.09 5.09 0 0 0 3.49 1.38 5.09 5.09 0 0 0 3.489-1.38 5.089 5.089 0 0 0 3.489 1.38H102V5.947z"
-              ></path>
-              <path
-                class="group-hover:fill-[#FF5B35]"
-                fill="#000"
-                d="M84.702 19.297h3.854V22h3.304v-5.946h-7.158zM102 0h-6.561v2.973H102z"
-              ></path>
-              <path
-                class="group-hover:fill-black"
-                fill="#FF5B35"
-                d="M26.842 11.297H10.737V5.946h16.105zM26.842 22H0v-5.351h26.842z"
-              ></path>
-            </g>
-          </svg>
-        </a>
-      </div>
-      <div>
-        <i class="bi bi-list text-black text-[30px] cursor-pointer"></i>
-      </div>
-    </header>
+    <div class="flex md:hidden justify-center items-center flex-col">
+      <header
+        class="w-full flex md:hidden justify-between items-center py-3 px-15 bg-[#f8f8f8] font-semibold"
+      >
+        <div>
+          <a href="#">
+            <svg
+              class="group"
+              xmlns="http://www.w3.org/2000/svg"
+              width="102"
+              height="22"
+              viewBox="0 0 102 22"
+            >
+              <g fill-rule="evenodd">
+                <path
+                  class="group-hover:fill-[#FF5B35]"
+                  fill="#000"
+                  d="M102 5.946h-3.222v4.28H91.8v-4.28h-3.221v4.28h-5.637a1.878 1.878 0 0 1-1.879-1.872V5.946h-3.221v2.408a1.878 1.878 0 0 1-1.879 1.873 1.878 1.878 0 0 1-1.879-1.873V5.946h-3.221v2.408a1.878 1.878 0 0 1-1.879 1.873h-1.879V5.946h-3.22v4.28h-17.18v3.212h3.758v.535c0 2.656-2.167 4.816-4.831 4.816-2.664 0-4.832-2.16-4.832-4.816v-3.746H37.58v3.746c0 4.426 3.613 8.027 8.053 8.027 4.44 0 8.052-3.6 8.052-8.027v-.535H68.985a5.09 5.09 0 0 0 3.489-1.381 5.09 5.09 0 0 0 3.49 1.38 5.09 5.09 0 0 0 3.489-1.38 5.089 5.089 0 0 0 3.489 1.38H102V5.947z"
+                ></path>
+                <path
+                  class="group-hover:fill-[#FF5B35]"
+                  fill="#000"
+                  d="M84.702 19.297h3.854V22h3.304v-5.946h-7.158zM102 0h-6.561v2.973H102z"
+                ></path>
+                <path
+                  class="group-hover:fill-black"
+                  fill="#FF5B35"
+                  d="M26.842 11.297H10.737V5.946h16.105zM26.842 22H0v-5.351h26.842z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div>
+          <i class="bi bi-list text-black text-[30px] cursor-pointer"></i>
+        </div>
+      </header>
+      <a href="#">
+        <img src="img/header-banner-desktop.gif" alt="GIF" class="object-cover min-h-[50px]" />
+      </a>
+    </div>
     <!--header end-->
   </body>
 </html>

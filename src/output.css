@@ -193,6 +193,12 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
+  .min-h-\[50px\] {
+    min-height: 50px;
+  }
+  .min-h-\[75px\] {
+    min-height: 75px;
+  }
   .w-\[130px\] {
     width: 130px;
   }
@@ -207,6 +213,9 @@
   }
   .resize {
     resize: both;
+  }
+  .flex-col {
+    flex-direction: column;
   }
   .items-center {
     align-items: center;
@@ -239,6 +248,9 @@
   .bg-linear-\[91deg\,\#ff5722_50\%\,\#e54917\] {
     --tw-gradient-position: 91deg,#ff5722 50%,#e54917;
     background-image: linear-gradient(var(--tw-gradient-stops,91deg,#ff5722 50%,#e54917));
+  }
+  .object-cover {
+    object-fit: cover;
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
