@@ -175,9 +175,6 @@
   .top-\[68px\] {
     top: 68px;
   }
-  .top-\[70px\] {
-    top: 70px;
-  }
   .z-10 {
     z-index: 10;
   }
@@ -192,9 +189,6 @@
   }
   .hidden {
     display: none;
-  }
-  .table {
-    display: table;
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
@@ -211,14 +205,8 @@
   .w-full {
     width: 100%;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -238,9 +226,6 @@
   .justify-center {
     justify-content: center;
   }
-  .gap-5 {
-    gap: calc(var(--spacing) * 5);
-  }
   .gap-7 {
     gap: calc(var(--spacing) * 7);
   }
@@ -250,19 +235,12 @@
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
   }
   .border-\[rgba\(0\,0\,0\,0\.3\)\] {
     border-color: rgba(0,0,0,0.3);
-  }
-  .border-\[rgba\(0\,0\,0\,0\.5\)\] {
-    border-color: rgba(0,0,0,0.5);
   }
   .bg-\[\#f8f8f8\] {
     background-color: #f8f8f8;
@@ -280,20 +258,11 @@
   .object-cover {
     object-fit: cover;
   }
-  .p-3 {
-    padding: calc(var(--spacing) * 3);
-  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
-  }
-  .px-5 {
-    padding-inline: calc(var(--spacing) * 5);
-  }
-  .px-10 {
-    padding-inline: calc(var(--spacing) * 10);
   }
   .px-15 {
     padding-inline: calc(var(--spacing) * 15);
@@ -306,9 +275,6 @@
   }
   .text-\[15px\] {
     font-size: 15px;
-  }
-  .text-\[16px\] {
-    font-size: 16px;
   }
   .text-\[30px\] {
     font-size: 30px;
@@ -329,13 +295,6 @@
   }
   .text-white {
     color: var(--color-white);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
@@ -421,11 +380,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -436,7 +390,6 @@
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-duration: initial;
     }
   }
