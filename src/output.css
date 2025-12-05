@@ -193,8 +193,14 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
   }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
@@ -217,17 +223,29 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
+  .h-\[68px\] {
+    height: 68px;
+  }
   .min-h-\[50px\] {
     min-height: 50px;
   }
   .min-h-\[75px\] {
     min-height: 75px;
   }
+  .w-\[50\%\] {
+    width: 50%;
+  }
   .w-\[80\%\] {
     width: 80%;
   }
+  .w-\[95\%\] {
+    width: 95%;
+  }
   .w-\[130px\] {
     width: 130px;
+  }
+  .w-\[200px\] {
+    width: 200px;
   }
   .w-full {
     width: 100%;
@@ -246,6 +264,9 @@
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -277,6 +298,12 @@
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
+  .rounded-\[25px\] {
+    border-radius: 25px;
+  }
+  .rounded-\[30px\] {
+    border-radius: 30px;
+  }
   .rounded-\[40px\] {
     border-radius: 40px;
   }
@@ -287,6 +314,10 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
@@ -294,8 +325,14 @@
   .border-\[rgba\(0\,0\,0\,0\.3\)\] {
     border-color: rgba(0,0,0,0.3);
   }
+  .border-black {
+    border-color: var(--color-black);
+  }
   .bg-\[\#f8f8f8\] {
     background-color: #f8f8f8;
+  }
+  .bg-black {
+    background-color: var(--color-black);
   }
   .bg-transparent {
     background-color: transparent;
@@ -310,11 +347,20 @@
   .object-cover {
     object-fit: cover;
   }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
   }
   .px-15 {
     padding-inline: calc(var(--spacing) * 15);
@@ -325,6 +371,9 @@
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
@@ -333,6 +382,9 @@
   }
   .py-15 {
     padding-block: calc(var(--spacing) * 15);
+  }
+  .text-center {
+    text-align: center;
   }
   .font-iran_Bold {
     font-family: var(--font-iran_Bold);
@@ -343,6 +395,12 @@
   }
   .text-\[15px\] {
     font-size: 15px;
+  }
+  .text-\[18px\] {
+    font-size: 18px;
+  }
+  .text-\[28px\] {
+    font-size: 28px;
   }
   .text-\[30px\] {
     font-size: 30px;
@@ -412,6 +470,62 @@
       }
     }
   }
+  .hover\:bg-\[\#1f1f1f83\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #1f1f1f83;
+      }
+    }
+  }
+  .hover\:bg-\[\#36363683\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #36363683;
+      }
+    }
+  }
+  .hover\:bg-\[\#44444483\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #44444483;
+      }
+    }
+  }
+  .hover\:bg-\[rgba\(0\,0\,0\,0\.01\)\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: rgba(0,0,0,0.01);
+      }
+    }
+  }
+  .hover\:bg-\[rgba\(0\,0\,0\,0\.2\)\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: rgba(0,0,0,0.2);
+      }
+    }
+  }
+  .hover\:bg-\[rgba\(0\,0\,0\,0\.3\)\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: rgba(0,0,0,0.3);
+      }
+    }
+  }
+  .hover\:bg-\[rgba\(0\,0\,0\,0\.5\)\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: rgba(0,0,0,0.5);
+      }
+    }
+  }
+  .hover\:bg-\[rgba\(255\,255\,255\,0\.5\)\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: rgba(255,255,255,0.5);
+      }
+    }
+  }
   .hover\:text-main-tapsi {
     &:hover {
       @media (hover: hover) {
@@ -432,6 +546,57 @@
   .lg\:flex {
     @media (width >= 991px) {
       display: flex;
+    }
+  }
+  .lg\:w-\[30\%\] {
+    @media (width >= 991px) {
+      width: 30%;
+    }
+  }
+  .lg\:w-\[70\%\] {
+    @media (width >= 991px) {
+      width: 70%;
+    }
+  }
+  .xl\:hidden {
+    @media (width >= 1280px) {
+      display: none;
+    }
+  }
+  .xl\:inline {
+    @media (width >= 1280px) {
+      display: inline;
+    }
+  }
+  .xl\:w-\[50\%\] {
+    @media (width >= 1280px) {
+      width: 50%;
+    }
+  }
+  .xl\:w-\[80\%\] {
+    @media (width >= 1280px) {
+      width: 80%;
+    }
+  }
+  .xl\:flex-nowrap {
+    @media (width >= 1280px) {
+      flex-wrap: nowrap;
+    }
+  }
+  .xl\:p-5 {
+    @media (width >= 1280px) {
+      padding: calc(var(--spacing) * 5);
+    }
+  }
+  .xl\:text-\[48px\] {
+    @media (width >= 1280px) {
+      font-size: 48px;
+    }
+  }
+  .xl\:leading-\[72px\] {
+    @media (width >= 1280px) {
+      --tw-leading: 72px;
+      line-height: 72px;
     }
   }
 }
