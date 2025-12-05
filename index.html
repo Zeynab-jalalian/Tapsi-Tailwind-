@@ -13,7 +13,7 @@
   </head>
   <body>
     <!--header start-->
-    <div class="md:flex hidden justify-center items-center flex-col">
+    <div class="md:flex hidden justify-center items-center flex-col sticky top-0">
       <header
         class="w-full md:flex hidden justify-around items-center p-5 bg-[#f8f8f8] font-semibold"
       >
@@ -85,7 +85,7 @@
       </a>
     </div>
     <!--header responsive-->
-    <div class="flex md:hidden justify-center items-center flex-col">
+    <div class="flex md:hidden justify-center items-center flex-col sticky top-0">
       <header
         class="w-full flex md:hidden justify-between items-center py-3 px-15 bg-[#f8f8f8] font-semibold"
       >
@@ -119,10 +119,14 @@
           </a>
         </div>
         <div>
-          <i class="bi bi-list text-black text-[30px] cursor-pointer" id="menu_icon"></i>
+          <i
+            class="bi bi-list text-black text-[30px] cursor-pointer"
+            id="menu_icon"
+          ></i>
         </div>
       </header>
-      <ul id="dropdown_menu"
+      <ul
+        id="dropdown_menu"
         class="hidden justify-center items-start flex-col gap-7 w-full py-2 px-3 text-[15px] text-gray1 border-t border-[rgba(0,0,0,0.3)] absolute bg-white z-10 top-[68px]"
       >
         <li class="hover:text-main-tapsi">
@@ -158,7 +162,6 @@
       </a>
     </div>
     <!--header end-->
-
 
     <script src="script.js"></script>
   </body>
