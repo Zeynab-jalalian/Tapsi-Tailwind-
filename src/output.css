@@ -3,15 +3,9 @@
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-      "Courier New", monospace;
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-bold: 700;
-    --default-font-family: var(--font-sans);
-    --default-mono-font-family: var(--font-mono);
   }
 }
 @layer base {
@@ -163,26 +157,60 @@
   }
 }
 @layer utilities {
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  .table {
+    display: table;
   }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .underline {
     text-decoration-line: underline;
   }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
 }
-@property --tw-font-weight {
+@layer base {
+  @font-face {
+    font-family: "iran_Bold";
+    src: url(fonts/IRANSansXFaNum-Bold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "iran_iran_Medium";
+    src: url(fonts/IRANSansXFaNum-Medium.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "iran_Regular";
+    src: url(fonts/IRANSansXFaNum-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "iran_Light";
+    src: url(fonts/IRANSansXFaNum-Light.ttf) format("truetype");
+  }
+}
+@property --tw-border-style {
   syntax: "*";
   inherits: false;
+  initial-value: solid;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-font-weight: initial;
+      --tw-border-style: solid;
+      --tw-outline-style: solid;
     }
   }
 }

@@ -1,1 +1,38 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 840px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  --font-*: initial;
+  --font-iran_Bold: iran_Bold;
+  --font-iran_Medium: iran_Medium;
+  --font-iran_Regular: iran_Regular;
+  --font-iran_Light: iran_Light;
+
+  --color-main-tapsi:rgb(255, 91, 53);
+}
+@layer base {
+  @font-face {
+    font-family: "iran_Bold";
+    src: url(fonts/IRANSansXFaNum-Bold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "iran_iran_Medium";
+    src: url(fonts/IRANSansXFaNum-Medium.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "iran_Regular";
+    src: url(fonts/IRANSansXFaNum-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "iran_Light";
+    src: url(fonts/IRANSansXFaNum-Light.ttf) format("truetype");
+  }
+}
+
