@@ -3,9 +3,17 @@
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
+    --color-black: #000;
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --radius-3xl: 1.5rem;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --font-iran_Bold: iran_Bold;
+    --color-main-tapsi: rgb(255, 91, 53);
+    --color-gray1: #545454;
   }
 }
 @layer base {
@@ -157,18 +165,103 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
+  }
+  .block {
+    display: block;
+  }
+  .flex {
+    display: flex;
+  }
   .table {
     display: table;
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .w-\[130px\] {
+    width: 130px;
+  }
+  .w-full {
+    width: 100%;
   }
   .border-collapse {
     border-collapse: collapse;
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .resize {
     resize: both;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-around {
+    justify-content: space-around;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
   }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .bg-\[\#f8f8f8\] {
+    background-color: #f8f8f8;
+  }
+  .bg-transparent {
+    background-color: transparent;
+  }
+  .bg-linear-\[91deg\,\#ff5722_50\%\,\#e54917\] {
+    --tw-gradient-position: 91deg,#ff5722 50%,#e54917;
+    background-image: linear-gradient(var(--tw-gradient-stops,91deg,#ff5722 50%,#e54917));
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .font-iran_Bold {
+    font-family: var(--font-iran_Bold);
+  }
+  .text-\[15px\] {
+    font-size: 15px;
+  }
+  .leading-10 {
+    --tw-leading: calc(var(--spacing) * 10);
+    line-height: calc(var(--spacing) * 10);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .text-gray1 {
+    color: var(--color-gray1);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;
@@ -176,6 +269,43 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .group-hover\:bg-\[rgba\(0\,0\,0\,0\.2\)\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-color: rgba(0,0,0,0.2);
+      }
+    }
+  }
+  .group-hover\:fill-\[\#FF5B35\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        fill: #FF5B35;
+      }
+    }
+  }
+  .group-hover\:fill-black {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        fill: var(--color-black);
+      }
+    }
+  }
+  .hover\:text-main-tapsi {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-main-tapsi);
+      }
+    }
   }
 }
 @layer base {
@@ -201,16 +331,31 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
       --tw-outline-style: solid;
+      --tw-duration: initial;
     }
   }
 }

@@ -15,7 +15,8 @@
   --font-iran_Regular: iran_Regular;
   --font-iran_Light: iran_Light;
 
-  --color-main-tapsi:rgb(255, 91, 53);
+  --color-main-tapsi: rgb(255, 91, 53);
+  --color-gray1: #545454;
 }
 @layer base {
   @font-face {
@@ -35,4 +36,3 @@
     src: url(fonts/IRANSansXFaNum-Light.ttf) format("truetype");
   }
 }
-
