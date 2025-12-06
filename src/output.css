@@ -182,8 +182,14 @@
   .top-\[68px\] {
     top: 68px;
   }
+  .z-0 {
+    z-index: 0;
+  }
   .z-10 {
     z-index: 10;
+  }
+  .z-50 {
+    z-index: 50;
   }
   .mx-auto {
     margin-inline: auto;
@@ -250,6 +256,9 @@
   }
   .max-w-\[480px\] {
     max-width: 480px;
+  }
+  .flex-shrink {
+    flex-shrink: 1;
   }
   .shrink-0 {
     flex-shrink: 0;
