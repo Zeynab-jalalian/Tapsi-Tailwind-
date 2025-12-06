@@ -220,15 +220,18 @@
     >
       <div class="flex flex-col justify-center items-start gap-10 w-full">
         <h1 class="font-bold text-[35px]">سرویس‌های تپسی</h1>
-        <ul class="flex items-center justify-around w-full" id="filter_ul">
-          <li class="text-center active" data-service="classic">
+        <ul
+          class="flex md:items-center items-start md:justify-around justify-start w-full overflow-x-auto md:overflow-visible gap-6 md:gap-0 whitespace-nowrap scrollbar-hide"
+          id="filter_ul"
+        >
+          <li class="text-center shrink-0 active" data-service="classic">
             <a class="cursor-pointer">
               <img src="img/cc-classic.webp" width="90" />
               <p class="font-bold mt-3">کلاسیک</p>
             </a>
           </li>
 
-          <li class="text-center" data-service="share">
+          <li class="text-center shrink-0" data-service="share">
             <a class="cursor-pointer">
               <img
                 class="opacity-[0.6]"
@@ -239,7 +242,7 @@
             </a>
           </li>
 
-          <li class="text-center" data-service="delivery">
+          <li class="text-center shrink-0" data-service="delivery">
             <a class="cursor-pointer">
               <img
                 class="opacity-[0.6]"
@@ -250,21 +253,21 @@
             </a>
           </li>
 
-          <li class="text-center" data-service="tel">
+          <li class="text-center shrink-0" data-service="tel">
             <a class="cursor-pointer">
               <img class="opacity-[0.6]" src="img/cc-tel.webp" width="90" />
               <p class="font-bold mt-3 opacity-[0.6]">تلفنی</p>
             </a>
           </li>
 
-          <li class="text-center" data-service="plus">
+          <li class="text-center shrink-0" data-service="plus">
             <a class="cursor-pointer">
               <img class="opacity-[0.6]" src="img/cc-plus.webp" width="90" />
               <p class="font-bold mt-3 opacity-[0.6]">پلاس</p>
             </a>
           </li>
 
-          <li class="text-center" data-service="intercity">
+          <li class="text-center shrink-0" data-service="intercity">
             <a class="cursor-pointer">
               <img
                 class="opacity-[0.6]"
@@ -283,13 +286,19 @@
         >
           <div>
             <h1 class="md:text-[28px] text-[16px] font-bold">تپسی کلاسیک</h1>
-            <p class="mt-3 text-[#333] md:text-[18px] text-[14px] w-full font-semibold md:max-w-[480px]">
+            <p
+              class="mt-3 text-[#333] md:text-[18px] text-[14px] w-full font-semibold md:max-w-[480px]"
+            >
               با سرویس تپسی کلاسیک، سریع، آسان و به‌صرفه به مقصد برسید. دراین
               سرویس می‌توانید به دو یا چند مقصد سفر کنید.
             </p>
           </div>
           <div>
-            <img src="img/illus-classic.webp" class="md:w-[480px] w-full" alt="img" />
+            <img
+              src="img/illus-classic.webp"
+              class="md:w-[480px] w-full"
+              alt="img"
+            />
           </div>
         </div>
         <div
@@ -298,75 +307,105 @@
         >
           <div>
             <h1 class="md:text-[28px] text-[16px] font-bold">باهمسفر</h1>
-            <p class="mt-3 text-[#333] md:text-[18px] text-[14px] w-full font-semibold md:max-w-[480px]">
+            <p
+              class="mt-3 text-[#333] md:text-[18px] text-[14px] w-full font-semibold md:max-w-[480px]"
+            >
               در سرویس باهمسفر تپسی، با یک مسافر دیگر هم مسیر می شوید. هزینه سفر
               شما با این سرویس ٪۳۵ به صرفه‌تر از سفر کلاسیک است.
             </p>
           </div>
           <div>
-            <img src="img/illus-wait-and-share.webp" class="md:w-[480px] w-full" alt="img" />
+            <img
+              src="img/illus-wait-and-share.webp"
+              class="md:w-[480px] w-full"
+              alt="img"
+            />
           </div>
         </div>
         <div
-      class="service-content w-full hidden md:flex-row flex-col-reverse md:justify-around justify-center md:items-start items-center gap-10"
+          class="service-content w-full hidden md:flex-row flex-col-reverse md:justify-around justify-center md:items-start items-center gap-10"
           data-service="delivery"
         >
           <div>
-            <h1 class="md:text-[28px] text-[16px]  font-bold">ارسال بسته</h1>
-            <p class="mt-3 text-[#333] md:text-[18px] text-[14px] w-full font-semibold md:max-w-[480px]">
+            <h1 class="md:text-[28px] text-[16px] font-bold">ارسال بسته</h1>
+            <p
+              class="mt-3 text-[#333] md:text-[18px] text-[14px] w-full font-semibold md:max-w-[480px]"
+            >
               شما می‌توانید با استفاده از سرویس ارسال بسته تپسی مرسولات خود را
               با موتوپیک(بسته کوچک) یا اتوپیک (بسته بزرگ) ارسال کنید.
             </p>
           </div>
           <div>
-            <img src="img/illus-delivery.webp" class="md:w-[480px] w-full" alt="img" />
+            <img
+              src="img/illus-delivery.webp"
+              class="md:w-[480px] w-full"
+              alt="img"
+            />
           </div>
         </div>
         <div
           data-service="tel"
-         class="service-content w-full hidden md:flex-row flex-col-reverse md:justify-around justify-center md:items-start items-center gap-10"
+          class="service-content w-full hidden md:flex-row flex-col-reverse md:justify-around justify-center md:items-start items-center gap-10"
         >
           <div>
-            <h1 class="md:text-[28px] text-[16px]  font-bold">تپسی تلفنی</h1>
-            <p class="mt-3 text-[#333] md:text-[18px] text-[14px] w-full font-semibold md:max-w-[480px]">
+            <h1 class="md:text-[28px] text-[16px] font-bold">تپسی تلفنی</h1>
+            <p
+              class="mt-3 text-[#333] md:text-[18px] text-[14px] w-full font-semibold md:max-w-[480px]"
+            >
               سرویس تپسی تلفنی یا ۱۶۳۰، این امکان را به شما می‌دهد که بدون نیاز
               به اینترنت و اپلیکیشن، درخواست خودرو بدهید.کافیست با شماره ۱۶۳۰
               تماس بگیرید.
             </p>
           </div>
           <div>
-            <img src="img/illus-tel.webp" class="md:w-[480px] w-full" alt="img" />
+            <img
+              src="img/illus-tel.webp"
+              class="md:w-[480px] w-full"
+              alt="img"
+            />
           </div>
         </div>
         <div
           data-service="plus"
-         class="service-content w-full hidden md:flex-row flex-col-reverse md:justify-around justify-center md:items-start items-center gap-10"
+          class="service-content w-full hidden md:flex-row flex-col-reverse md:justify-around justify-center md:items-start items-center gap-10"
         >
           <div>
-            <h1 class="md:text-[28px] text-[16px]  font-bold">تپسی پلاس</h1>
-            <p class="mt-3 text-[#333] md:text-[18px] text-[14px] w-full font-semibold md:max-w-[480px]">
+            <h1 class="md:text-[28px] text-[16px] font-bold">تپسی پلاس</h1>
+            <p
+              class="mt-3 text-[#333] md:text-[18px] text-[14px] w-full font-semibold md:max-w-[480px]"
+            >
               سرویس تپسی پلاس با ماشین‌های مدل بالاتر و کارکرد کمتر ارائه
               می‌شود. در این سرویس امکان تعیین چند مقصد و توقف در مسیر وجود
               دارد.
             </p>
           </div>
           <div>
-            <img src="img/illus-plus.webp" class="md:w-[480px] w-full" alt="img" />
+            <img
+              src="img/illus-plus.webp"
+              class="md:w-[480px] w-full"
+              alt="img"
+            />
           </div>
         </div>
         <div
           data-service="intercity"
-         class="service-content w-full hidden md:flex-row flex-col-reverse md:justify-around justify-center md:items-start items-center gap-10"
+          class="service-content w-full hidden md:flex-row flex-col-reverse md:justify-around justify-center md:items-start items-center gap-10"
         >
           <div>
-            <h1 class="md:text-[28px] text-[16px]  font-bold">بین شهری</h1>
-            <p class="mt-3 text-[#333] md:text-[18px] text-[14px] w-full font-semibold md:max-w-[480px]">
+            <h1 class="md:text-[28px] text-[16px] font-bold">بین شهری</h1>
+            <p
+              class="mt-3 text-[#333] md:text-[18px] text-[14px] w-full font-semibold md:max-w-[480px]"
+            >
               با تاکسی اینترنتی بین شهری تپسی می‌توانید با قیمت مناسب و امنیت
               بالا به شهرهای دور و نزدیک سفر کنید.
             </p>
           </div>
           <div>
-            <img src="img/illus-intercity.webp" class="md:w-[480px] w-full" alt="img" />
+            <img
+              src="img/illus-intercity.webp"
+              class="md:w-[480px] w-full"
+              alt="img"
+            />
           </div>
         </div>
       </div>
