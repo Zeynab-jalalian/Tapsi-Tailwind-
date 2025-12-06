@@ -6,6 +6,7 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -278,6 +279,9 @@
   .w-full {
     width: 100%;
   }
+  .max-w-\[480px\] {
+    max-width: 480px;
+  }
   .flex-shrink {
     flex-shrink: 1;
   }
@@ -304,6 +308,9 @@
   }
   .flex-col-reverse {
     flex-direction: column-reverse;
+  }
+  .flex-row {
+    flex-direction: row;
   }
   .flex-wrap {
     flex-wrap: wrap;
@@ -495,6 +502,10 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+  }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
@@ -680,6 +691,21 @@
       display: flex;
     }
   }
+  .lg\:flex-row {
+    @media (width >= 991px) {
+      flex-direction: row;
+    }
+  }
+  .lg\:items-center {
+    @media (width >= 991px) {
+      align-items: center;
+    }
+  }
+  .lg\:gap-10 {
+    @media (width >= 991px) {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
   .xl\:hidden {
     @media (width >= 1280px) {
       display: none;
@@ -700,9 +726,34 @@
       width: 80%;
     }
   }
+  .xl\:flex-col {
+    @media (width >= 1280px) {
+      flex-direction: column;
+    }
+  }
+  .xl\:flex-row {
+    @media (width >= 1280px) {
+      flex-direction: row;
+    }
+  }
   .xl\:flex-nowrap {
     @media (width >= 1280px) {
       flex-wrap: nowrap;
+    }
+  }
+  .xl\:items-center {
+    @media (width >= 1280px) {
+      align-items: center;
+    }
+  }
+  .xl\:gap-10 {
+    @media (width >= 1280px) {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
+  .xl\:gap-15 {
+    @media (width >= 1280px) {
+      gap: calc(var(--spacing) * 15);
     }
   }
   .xl\:p-5 {
