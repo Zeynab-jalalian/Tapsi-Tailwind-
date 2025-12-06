@@ -272,6 +272,9 @@
   .h-\[54px\] {
     height: 54px;
   }
+  .h-\[55px\] {
+    height: 55px;
+  }
   .h-\[68px\] {
     height: 68px;
   }
@@ -314,8 +317,14 @@
   .w-\[150px\] {
     width: 150px;
   }
+  .w-\[170px\] {
+    width: 170px;
+  }
   .w-\[200px\] {
     width: 200px;
+  }
+  .w-\[220px\] {
+    width: 220px;
   }
   .w-\[300px\] {
     width: 300px;
@@ -513,6 +522,12 @@
   .px-15 {
     padding-inline: calc(var(--spacing) * 15);
   }
+  .px-\[10\%\] {
+    padding-inline: 10%;
+  }
+  .px-\[48px\] {
+    padding-inline: 48px;
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -539,6 +554,9 @@
   }
   .pr-5 {
     padding-right: calc(var(--spacing) * 5);
+  }
+  .pb-3 {
+    padding-bottom: calc(var(--spacing) * 3);
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
@@ -677,6 +695,13 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         fill: var(--color-black);
+      }
+    }
+  }
+  .hover\:bg-\[\#1a1a1a9c\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #1a1a1a9c;
       }
     }
   }
@@ -875,6 +900,11 @@
       font-size: 32px;
     }
   }
+  .md\:text-\[35px\] {
+    @media (width >= 768px) {
+      font-size: 35px;
+    }
+  }
   .lg\:flex {
     @media (width >= 991px) {
       display: flex;
@@ -913,6 +943,11 @@
   .xl\:w-\[80\%\] {
     @media (width >= 1280px) {
       width: 80%;
+    }
+  }
+  .xl\:flex-col {
+    @media (width >= 1280px) {
+      flex-direction: column;
     }
   }
   .xl\:flex-row {
